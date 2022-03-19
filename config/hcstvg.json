@@ -1,0 +1,6 @@
+{
+  "combine_datasets": ["hcstvg"],
+  "combine_datasets_val": ["hcstvg"],
+  "hcstvg_vid_path" : "/data/HC-STVG/",
+  "hcstvg_ann_path" : "/data/HC-STVG/"
+}

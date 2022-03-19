@@ -1,0 +1,6 @@
+{
+  "combine_datasets": ["vidstg"],
+  "combine_datasets_val": ["vidstg"],
+  "vidstg_vid_path" : "/data/VidOR/",
+  "vidstg_ann_path" : "/data/VidSTG/"
+}

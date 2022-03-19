@@ -1,0 +1,10 @@
+ffmpeg_python==0.2.0
+numpy==1.21.4
+opencv_python==4.5.4.58
+Pillow==8.4.0
+python_hostlist==1.21
+timm==0.4.12
+torch==1.8.1
+torchvision==0.9.1
+tqdm==4.50.2
+transformers==4.5.1

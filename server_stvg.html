@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+<link rel="icon" href="https://antoyang.github.io/img/favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="https://antoyang.github.io/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center><h1> <a href='https://antoyang.github.io/tubedetr.html'> TubeDETR </a> Spatio-Temporal Video Grounding Demo </h1>
+<h2> <a href='http://stvg.paris.inria.fr/'> Back to Index </a> </h2></center>
+<div class="row">
+    <div class="col-sm-offset-2 col-sm-6">
+<video width="100%" height="360" controls="controls" preload="metadata"><source  src="{}#t={},{}" type="video/mp4"></video>
+</div>
+
+<div class="col-sm-2">
+<br>
+<form action="/stvg">
+<label for="video_id">VidOR Video ID</label>
+<input type="text" id="video_id" name="video_id" size="15" value="{}"><br><br>
+<label for="start">Start second</label>
+<input type="text" id="start" name="start" size="5" value={}><br><br>
+<label for="end">End second</label>
+<input type="text" id="end" name="end" size="5" value={}><br><br>
+<b> Describe what you want to localize spatially and temporally below: </b> <br>
+<input type="text" id="question" name="question" size="50" value="{}"><br><br>
+<input type="submit" value="Submit"><br>
+</form>
+</div>
+</div>
