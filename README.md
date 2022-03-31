@@ -1,6 +1,6 @@
 # TubeDETR: Spatio-Temporal Video Grounding with Transformers
 
-[Website](https://antoyang.github.io/tubedetr.html) • [STVG Demo](http://stvg.paris.inria.fr/) • [Paper](https://arxiv.org/abs/TBC)
+[Website](https://antoyang.github.io/tubedetr.html) • [STVG Demo](http://stvg.paris.inria.fr/) • [Paper](https://arxiv.org/abs/2203.16434)
 
 This repository provides the code for our paper. This includes:
 - Software setup, data downloading and preprocessing instructions for the VidSTG, HC-STVG1 and HC-STVG2.0 datasets
