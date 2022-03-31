@@ -4,6 +4,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tubedetr-spatio-temporal-video-grounding-with/spatio-temporal-video-grounding-on-vidstg)](https://paperswithcode.com/sota/spatio-temporal-video-grounding-on-vidstg?p=tubedetr-spatio-temporal-video-grounding-with)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tubedetr-spatio-temporal-video-grounding-with/spatio-temporal-video-grounding-on-hc-stvg1)](https://paperswithcode.com/sota/spatio-temporal-video-grounding-on-hc-stvg1?p=tubedetr-spatio-temporal-video-grounding-with)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tubedetr-spatio-temporal-video-grounding-with/spatio-temporal-video-grounding-on-hc-stvg2)](https://paperswithcode.com/sota/spatio-temporal-video-grounding-on-hc-stvg2?p=tubedetr-spatio-temporal-video-grounding-with)
 
 This repository provides the code for our paper. This includes:
 - Software setup, data downloading and preprocessing instructions for the VidSTG, HC-STVG1 and HC-STVG2.0 datasets
