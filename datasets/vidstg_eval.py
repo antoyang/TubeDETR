@@ -113,7 +113,7 @@ class VidSTGiouEvaluator:
                 max_start = max(gt_sted[0], pred_sted[0])
                 min_end = min(gt_sted[1], pred_sted[1])
                 min_start = min(gt_sted[0], pred_sted[0])
-                max_end = min(gt_sted[1], pred_sted[1])
+                max_end = max(gt_sted[1], pred_sted[1])
                 if min_end <= max_start:
                     tiou = 0
                 else:

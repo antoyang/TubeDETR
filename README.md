@@ -72,7 +72,7 @@ python -m torch.distributed.launch --nproc_per_node=NUM_GPUS --use_env main.py -
 **Baselines**
 - To remove time encoding, add `--no_time_embed`.  
 - To remove the temporal self-attention in the space-time decoder, add `--no_tsa`.  
-- To train from ImageNet initialization, pass an empty string to the argument `--load` and add `--sted_loss_coef=5 --lr=2e-5 --text_encoder_lr=2e-5 --epochs=20 --lr_drop=20` for VidSTG or `--epochs=60 --lr_drop=60` for HC-STVG1.
+- To train from ImageNet initialization, pass an empty string to the argument `--load` and add `--sted_loss_coef=5 --lr=2e-5 --text_encoder_lr=2e-5 --epochs=20 --lr_drop=20` for VidSTG or `--epochs=70 --lr_drop=70 --text_encoder_lr=1e-5` for HC-STVG1.
 - To train with a randomly initalized temporal self-attention, add `--rd_init_tsa`.  
 - To train with a different spatial resolution (e.g. res=352) or temporal stride (e.g. k=4), add `--resolution=224` or `--stride=5`.
 - To train with the slow-only variant, add `--no_fast`.
@@ -88,7 +88,7 @@ python -m torch.distributed.launch --nproc_per_node=NUM_GPUS --use_env main.py -
 | MDETR init + HC-STVG2.0 | k=4 res=352 | [Drive](https://drive.google.com/file/d/1EAWHXPafyZxQh398HvMJf43-CiyWJvtn/view?usp=sharing)    | 3.0GB       |
 | MDETR init + HC-STVG2.0 | k=2 res=224 | [Drive](https://drive.google.com/file/d/1mkY1vv1U_pSVRj4JRY6uYTABKONQEh_w/view?usp=sharing)    | 3.0GB       |
 | MDETR init + HC-STVG1 | k=4 res=352 | [Drive](https://drive.google.com/file/d/1cbPUx0rc20EUdz2jhhq2MbJY-YZ2ATl0/view?usp=sharing)    | 3.0GB       |
-| ImageNet init + HC-STVG1 | k=4 res=352 | [Drive](https://drive.google.com/file/d/1pTwFyscH45ejcSIKY8Ykmbm72C8XJKQv/view?usp=sharing)    | 3.0GB      |
+| ImageNet init + HC-STVG1 | k=4 res=352 | [Drive](https://drive.google.com/file/d/1XDC9hK9NhAVHGwOg9koGKEzheglsVy8H/view?usp=sharing)    | 3.0GB      |
 
 ## Evaluation
 For evaluation only, simply run the same commands as for training with `--resume=CHECKPOINT --eval`. 
