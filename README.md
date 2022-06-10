@@ -80,15 +80,15 @@ python -m torch.distributed.launch --nproc_per_node=NUM_GPUS --use_env main.py -
 
 ## Available Checkpoints
 
-| Training data | parameters | url | size |
-|-----|-----|-----|-----|
-| MDETR init + VidSTG | k=4 res=352 | [Drive](https://drive.google.com/file/d/1GqYjnad42-fri1lxSmT0vFWwYez6_iOv/view?usp=sharing)    | 3.0GB      |
-| MDETR init + VidSTG | k=2 res=224 | [Drive](https://drive.google.com/file/d/1FaKT54s7LWcTgW562OXpVWHPXxNG7INu/view?usp=sharing)    | 3.0GB      |
-| ImageNet init + VidSTG | k=4 res=352 | [Drive](https://drive.google.com/file/d/1TSyR0RUf2VoDlBHVKvIZ0X8P53SW-Fi4/view?usp=sharing)    | 3.0GB      |
-| MDETR init + HC-STVG2.0 | k=4 res=352 | [Drive](https://drive.google.com/file/d/1EAWHXPafyZxQh398HvMJf43-CiyWJvtn/view?usp=sharing)    | 3.0GB       |
-| MDETR init + HC-STVG2.0 | k=2 res=224 | [Drive](https://drive.google.com/file/d/1mkY1vv1U_pSVRj4JRY6uYTABKONQEh_w/view?usp=sharing)    | 3.0GB       |
-| MDETR init + HC-STVG1 | k=4 res=352 | [Drive](https://drive.google.com/file/d/1cbPUx0rc20EUdz2jhhq2MbJY-YZ2ATl0/view?usp=sharing)    | 3.0GB       |
-| ImageNet init + HC-STVG1 | k=4 res=352 | [Drive](https://drive.google.com/file/d/1XDC9hK9NhAVHGwOg9koGKEzheglsVy8H/view?usp=sharing)    | 3.0GB      |
+| Training data | parameters | url | VidSTG test declarative sentences (vIoU/vIoU@0.3/vIoU@0.5) | VidSTG test interrogative sentences (vIoU/vIoU@0.3/vIoU@0.5) | HC-STVG1 test (vIoU/vIoU@0.3/vIoU@0.5) | HC-STVG2.0 val (vIoU/vIoU@0.3/vIoU@0.5) | size |
+|-----|-----|-----|-----|-----|-----|-----|-----|
+| MDETR init + VidSTG | k=4 res=352 | [Drive](https://drive.google.com/file/d/1GqYjnad42-fri1lxSmT0vFWwYez6_iOv/view?usp=sharing)    | 30.4/42.5/28.2 | 25.7/35.7/23.2 | | | 3.0GB      |
+| MDETR init + VidSTG | k=2 res=224 | [Drive](https://drive.google.com/file/d/1FaKT54s7LWcTgW562OXpVWHPXxNG7INu/view?usp=sharing)    | 29.0/40.4/78.3 | 24.6/33.6/21.6 | | | 3.0GB      |
+| ImageNet init + VidSTG | k=4 res=352 | [Drive](https://drive.google.com/file/d/1TSyR0RUf2VoDlBHVKvIZ0X8P53SW-Fi4/view?usp=sharing)    | 22.0/29.7/18.1 | 19.6/26.1/14.9 | | | 3.0GB      |
+| MDETR init + HC-STVG2.0 | k=4 res=352 | [Drive](https://drive.google.com/file/d/1EAWHXPafyZxQh398HvMJf43-CiyWJvtn/view?usp=sharing)    | | | | 36.4/58.8/30.6 | 3.0GB       |
+| MDETR init + HC-STVG2.0 | k=2 res=224 | [Drive](https://drive.google.com/file/d/1mkY1vv1U_pSVRj4JRY6uYTABKONQEh_w/view?usp=sharing)    | | | | 35.8/56.7/29.6 | 3.0GB       |
+| MDETR init + HC-STVG1 | k=4 res=352 | [Drive](https://drive.google.com/file/d/1cbPUx0rc20EUdz2jhhq2MbJY-YZ2ATl0/view?usp=sharing)    | | | 32.4/49.8/23.5 | | 3.0GB       |
+| ImageNet init + HC-STVG1 | k=4 res=352 | [Drive](https://drive.google.com/file/d/1XDC9hK9NhAVHGwOg9koGKEzheglsVy8H/view?usp=sharing)    | | | 21.2/31.6/12.2 | | 3.0GB      |
 
 ## Evaluation
 For evaluation only, simply run the same commands as for training with `--resume=CHECKPOINT --eval`. 
@@ -109,8 +109,9 @@ The code for video spatial data augmentation is inspired by [torch_videovision](
 If you found this work useful, consider giving this repository a star and citing our paper as followed:
 ```
 @inproceedings{yang2022tubedetr,
-title={TubeDETR: Spatio-Temporal Video Grounding with Transformers},
-author={Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
-booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-year={2022}}
+author    = {Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
+title     = {TubeDETR: Spatio-Temporal Video Grounding With Transformers},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+year      = {2022},
+pages     = {16442-16453}}
 ```
