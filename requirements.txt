@@ -1,5 +1,5 @@
 ffmpeg_python==0.2.0
-numpy==1.21.4
+numpy==1.22.0
 opencv_python==4.5.4.58
 Pillow==8.4.0
 python_hostlist==1.21
