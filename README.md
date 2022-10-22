@@ -6,6 +6,9 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tubedetr-spatio-temporal-video-grounding-with/spatio-temporal-video-grounding-on-hc-stvg1)](https://paperswithcode.com/sota/spatio-temporal-video-grounding-on-hc-stvg1?p=tubedetr-spatio-temporal-video-grounding-with)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tubedetr-spatio-temporal-video-grounding-with/spatio-temporal-video-grounding-on-hc-stvg2)](https://paperswithcode.com/sota/spatio-temporal-video-grounding-on-hc-stvg2?p=tubedetr-spatio-temporal-video-grounding-with)
 
+![Teaser](https://antoyang.github.io/img/tubedetr-header.png)
+TubeDETR is a new architecture for spatio-temporal video grounding that consists of an efficient video and text encoder that models spatial multi-modal interactions over sparsely sampled frames and a space-time decoder that jointly performs spatio-temporal localization.
+
 This repository provides the code for our paper. This includes:
 - Software setup, data downloading and preprocessing instructions for the VidSTG, HC-STVG1 and HC-STVG2.0 datasets
 - Training scripts and pretrained checkpoints
