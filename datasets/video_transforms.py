@@ -202,7 +202,7 @@ def resize(clip, targets, size, max_size=None):
     ):  # TODO: not sure if it is needed to do for all images from the clip
         targets[i_tgt]["size"] = torch.tensor([h, w])
 
-    if "masks" in targets:
+    if "masks" in targets[0]:
         for i_tgt in range(len(targets)):  # apply for every image of the clip
             targets[i_tgt]["masks"] = (
                 interpolate(
