@@ -112,9 +112,8 @@ The code for video spatial data augmentation is inspired by [torch_videovision](
 If you found this work useful, consider giving this repository a star and citing our paper as followed:
 ```
 @inproceedings{yang2022tubedetr,
-author    = {Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
+author    = {Antoine Yang and Antoine Miech and Josef Sivic and Ivan Laptev and Cordelia Schmid},
 title     = {TubeDETR: Spatio-Temporal Video Grounding With Transformers},
-booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-year      = {2022},
-pages     = {16442-16453}}
+booktitle = {CVPR},
+year      = {2022}}
 ```
