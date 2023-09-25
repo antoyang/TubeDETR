@@ -113,6 +113,13 @@ class VideoModulatedSTGrounding(Dataset):
         w = video["width"]
         h = video["height"]
         images_list = np.frombuffer(out, np.uint8).reshape([-1, h, w, 3])
+
+        # In few cases ffmpeg generate an extra frame, this will fix the issue of lengths mismatch (assertion error)
+        if len(images_list) > len(frame_ids):
+            images_list = images_list[:len(frame_ids)]
+        if len(frame_ids) > len(images_list):
+            frame_ids = frame_ids[:len(images_list)]
+
         assert len(images_list) == len(frame_ids)
 
         # prepare frame-level targets
